@@ -1,8 +1,5 @@
 <template>
-    <div>
-        <h1>Hello SSR</h1>
-        <h3>URL: {{ location }}</h3>
-    </div>
+    <router-view></router-view>
 
 </template>
 
