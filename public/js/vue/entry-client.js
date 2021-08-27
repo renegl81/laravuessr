@@ -17,13 +17,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "App",
-  computed: {
-    location: function location() {
-      return window.location.href;
-    }
-  }
+  name: "App"
 });
 
 /***/ }),
@@ -112,7 +109,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_2__.default);
-var location = window.location.href;
+var location = 'window.location.href'; // let location = window.location.href;
+
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
   mode: 'history',
   routes: [{
@@ -292,7 +290,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("router-view")
+  return _c(
+    "div",
+    [_c("h1", [_vm._v("App")]), _vm._v(" "), _c("router-view")],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

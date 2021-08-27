@@ -1,16 +1,13 @@
 <template>
+    <div>
+    <h1>App</h1>
     <router-view></router-view>
-
+    </div>
 </template>
 
 <script>
 export default {
-    name: "App",
-    computed: {
-        location(){
-            return window.location.href
-        }
-    }
+    name: "App"
 }
 </script>
 

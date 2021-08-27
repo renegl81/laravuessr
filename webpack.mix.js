@@ -14,7 +14,3 @@ mix
     .js('resources/js/entry-client.js', 'public/js/vue').vue()
     .js('resources/js/entry-server.js', 'public/js/vue').vue()
     .postCss('resources/css/app.css', 'public/css/app.css')
-/*mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);*/

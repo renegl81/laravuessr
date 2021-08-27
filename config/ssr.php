@@ -31,7 +31,7 @@ return [
      * Extra setup for the Node engine.
      */
     'node' => [
-        'node_path' => env('NODE_PATH', '/usr/bin/node'),
+        'node_path' => env('NODE_PATH', '/home/renegl/.nvm/versions/node/v8.17.0/bin/node'),
         'temp_path' => env('SSR_TEMP_PATH', storage_path('app/ssr')),
     ],
 
